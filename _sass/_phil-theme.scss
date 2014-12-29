@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/*
+
+  Phil Theme
+
+  Minor overrides to pixyll for custom theme.
+
+*/
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 1em 0 0.5em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 1.125rem;
+
+  caption {
+    margin: 0 0 1rem;
+  }
+
+  thead {
+    border-bottom: solid 1px #d9d9d9;
+    background-color: transparent;
+  }
+
+  td, th {
+    padding: .5rem;
+  }
+
+  &.striped {
+    tr.even,
+    tr.alt,
+    tr:nth-of-type(even) {
+      background-color: #fcfcfc;
+    }
+  }
+}
+
+.site-title,
+.site-nav {
+  line-height: 40px;
+  font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.philhead {
+  float: left;
+  display: block;
+  margin: 0 1.5rem 0 0;
+
+  &.small {
+    height: 40px;
+    margin-right: 0.75rem;
+  }
+}
+
+.contact-methods {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.social-icons a {
+  color: #7a7a7a;
+}
+
+.contact-methods i {
+  width: 20px;
+  text-align: center;
+  display: inline-block;
+  padding: 0 .5rem;
+}
+
+.responsive-img {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #d9d9d9;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.credits {
+  list-style: none;
+}
+
+.post-media {
+  width: 360px;
+  float: left;
+  display: block;
+  margin: 1rem 2rem 1rem 0;
+}
+
+.form-light .input,
+.form-light .textarea,
+.form-light .select {
+  border-color: #ddd;
+}
+
+.post-categories {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+
+  li {
+    display: inline-block;
+    font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 1rem;
+
+    a {
+      display: block;
+      color: #444;
+      padding: 0 .5rem;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      transition: all 150ms ease;
+
+      &:hover {
+        border-color: #aaa;
+      }
+    }
+  }
+}
+
+.tag-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+
+  li {
+    margin: 1rem 0;
+  }
+}
+
+.project-url {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+/* Code Highlighting Override */
+// .highlight,
+// .gist-syntax .highlight { background-color: #fefefe; border: 1px solid #eee; color: #586e75 }
