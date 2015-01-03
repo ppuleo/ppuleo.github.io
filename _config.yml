@@ -7,7 +7,7 @@ baseurl:     ""
 url:         "http://phillippuleo.com"
 
 # Google analytics
-google_analytics:
+google_analytics: UA-30272735-1
 
 # Optional features
 animated:           true
