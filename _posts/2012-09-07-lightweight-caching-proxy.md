@@ -49,13 +49,13 @@ fetchURL(); // Execute the function
 
 function fetchURL() {
 
-  if (isset($_POST[&quot;url&quot;])) { // Check for the presence of our expected POST variable.
+  if (isset($_POST["url"])) { // Check for the presence of our expected POST variable.
 
-    $url = filter_var($_POST[&quot;url&quot;], FILTER_SANITIZE_URL); // Be careful with posting variables.
-    $cache_file = &quot;cache/&quot;.hash(&#39;md5&#39;, $url).&quot;.html&quot;; // Create a unique name for the cache file using a quick md5 hash.
+    $url = filter_var($_POST["url"], FILTER_SANITIZE_URL); // Be careful with posting variables.
+    $cache_file = "cache/".hash('md5', $url).".html"; // Create a unique name for the cache file using a quick md5 hash.
 
     // If the file exists and was cached in the last 24 hours...
-    if (file_exists($cache_file) &amp;&amp; (filemtime($cache_file) &gt; (time() - 86400 ))) { // 86,400 seconds = 24 hours.
+    if (file_exists($cache_file) && (filemtime($cache_file) > (time() - 86400 ))) { // 86,400 seconds = 24 hours.
 
       $file = file_get_contents($cache_file); // Get the file from the cache.
       echo $file; // echo the file out to the browser.

@@ -125,7 +125,7 @@ myApp.factory('Gists', ['$resource', function ($resource) {
 
 <p><strong>demo:&nbsp;<a href="http://embed.plnkr.co/GudLBQP0INk6CVF04gWr/preview" target="_blank">Example 3</a></strong></p>
 <h2>Resolve multiple resource promises</h2>
-<p>And what if you want to fully resolve multiple resource promises before your route/state change? No problem, just return your own promise and use $q.all to wait for all resource promises to resolve.</p>
+<p>And what if you want to fully resolve multiple resource promises before your route/state change? No problem, just use $q.all to wait for all resource promises to resolve.</p>
 {% highlight javascript %}
 // example $stateProvider config in our main module config (using ui-router)
 
@@ -140,20 +140,12 @@ $stateProvider
     resolve: {
       delayedData: function($q, Gists, Meta) { // Inject resources named 'Gists' and 'Meta'
 
-        // Set up a promise to return
-        var deferred = $q.defer();
-
         // Set up our resource calls
         var GistsData = Gists.query();
         var MetaData = Meta.get();
 
-        // Wait until both resources have resolved their promises, then resolve this promise
-        $q.all([GistsData.$promise, MetaData.$promise]).then(function(response) {
-
-          deferred.resolve(response);
-        });
-
-        return deferred.promise;
+        // Wait until both resources have resolved their promises, then return this promise
+        return $q.all([GistsData.$promise, MetaData.$promise]);
       }
     }
   });

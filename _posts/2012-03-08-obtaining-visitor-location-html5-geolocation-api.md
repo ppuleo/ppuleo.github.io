@@ -48,7 +48,7 @@ navigator.geolocation.getCurrentPosition(success_handler, error_handler, {timeou
     // Start a timer to ensure we get some kind of response.
     // Make sure to clear this timer in your success and error handlers
     var location_timeout = setTimeout(function(){
-      your_error_handler({&#39;TIMEOUT&#39;:&#39;1&#39;})
+      your_error_handler({'TIMEOUT':'1'})
     }, 8000);
 
     // Call the HTML5 geolocation feature with your handlers for success/error and an 8-second timeout.
@@ -70,16 +70,16 @@ function your_error_handler(error) {
   // Respond to the possible error states.
   switch(error.code){
     case error.PERMISSION_DENIED:
-      console.log(&quot;The user prevented this page from retrieving a location. Paranoid.&quot;);
+      console.log("The user prevented this page from retrieving a location.");
       break;
     case error.POSITION_UNAVAILABLE:
-      console.log(&quot;The browser was unable to determine its location: &quot; + error.message);
+      console.log("The browser was unable to determine its location: " + error.message);
       break;
     case error.TIMEOUT:
-      console.log(&quot;The browser timed out before retrieving its location.&quot;);
+      console.log("The browser timed out before retrieving its location.");
       break;
     default:
-      console.log(&quot;There was an unspecified or novel error. Nuts.&quot;);
+      console.log("There was an unspecified or novel error. Nuts.");
   }
 
   // Clear the previously set timeout so we don&#39;t execute the error_handler twice&hellip;
@@ -149,7 +149,7 @@ function your_error_handler(error) {
 {% highlight javascript %}
 function your_success_handler(position) {
 
-  // Clear the timeout since the success_handler has executed&hellip;
+  // Clear the timeout since the success_handler has executed...
   clearTimeout(location_timeout);
 
   // Get the coordinates from the HTML5 geolocation API.
@@ -158,7 +158,7 @@ function your_success_handler(position) {
 
   // If HTML5 geolocation reports success but fails to provide coordinates...
   if (!latitude || !longitude) {
-    console.log(&quot;navigator.geolocation.getCurrentPosition returned bad data.&quot;);
+    console.log("navigator.geolocation.getCurrentPosition returned bad data.");
 
     // Call your IP-based geolocation function as a fallback.
     yourIpFallbackFunction();
