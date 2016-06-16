@@ -14,12 +14,15 @@ animated:           true
 show_related_posts: false
 show_post_footers:  false
 
+# Gems
+gems: [jekyll-paginate]
+
 # Social icons
 show_social_icons: true
 github_username: ppuleo
 twitter_username:
 google_plus_id:
-linkedin_username: ppuleo
+linkedin_username: phillippuleo
 bitcoin_url:
 paypal_url:
 flattr_button:
@@ -30,4 +33,4 @@ markdown:     kramdown
 permalink:    pretty
 paginate:     5
 sass:
-  compressed: true
+compressed: true
