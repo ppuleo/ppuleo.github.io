@@ -157,5 +157,13 @@ table {
 }
 
 /* Code Highlighting Override */
-// .highlight,
-// .gist-syntax .highlight { background-color: #fefefe; border: 1px solid #eee; color: #586e75 }
+.highlight {
+  pre {
+    padding: 0.5rem;
+    line-height: 1.2;
+  }
+
+  table {
+    margin: 0.5rem 0;
+  }
+}

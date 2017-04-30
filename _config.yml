@@ -29,8 +29,9 @@ flattr_button:
 cv: "/images/puleo_resume.pdf"
 
 # Build settings
-markdown:     kramdown
-permalink:    pretty
-paginate:     5
+markdown: kramdown
+syntax_highlighter: rouge
+permalink: pretty
+paginate: 5
 sass:
-compressed: true
+  compressed: true
