@@ -1,3 +1,18 @@
-<a href="{{ site.baseurl }}/about/">About</a>
-<a href="{{ site.baseurl }}/work/">Work</a>
-<a href="{{ site.baseurl }}/contact/">Contact</a>
+{% assign current = page.url | downcase | split: '/' %}
+
+<a 
+  href="{{ site.baseurl }}/about/" 
+  {% if current[1] == 'about' %}class='active'{% endif %}
+>About</a>
+<a 
+  href="{{ site.baseurl }}/articles/"
+  {% if current[1] == 'articles' %}class='active'{% endif %}
+>Articles</a>
+<a 
+  href="{{ site.baseurl }}/work/"
+  {% if current[1] == 'work' %}class='active'{% endif %}
+>Work</a>
+<a 
+  href="{{ site.baseurl }}/contact/"
+  {% if current[1] == 'contact' %}class='active'{% endif %}
+>Contact</a>

@@ -2,6 +2,7 @@
 layout:     post
 title:      Travelodge Match-Up with CSS3 Transforms
 date:       2012-10-14T20:07:16-0700
+image:      /images/hotel-cat.png
 summary:    When I moved to San Francisco, I stayed in a Travelodge for a few weeks while I looked for a reasonable apartment in the city. To commemorate that awful stay, I made a memory matching game using CSS3 transforms and transitions.
 categories: article
 tags:

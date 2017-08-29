@@ -2,6 +2,7 @@
 layout:     post
 title:      Obtaining Visitor Location with the HTML5 Geolocation API
 date:       2012-03-08T12:30:04-0800
+image:      /images/html5-geo.png
 summary:    The HTML5 Geolocation API can be a handy tool for location-aware applications but browser support is still incomplete. Utilize HTML5 geolocation, a timeout, and IP-based geolocation to ensure you get a visitor location.
 categories: article
 tags:

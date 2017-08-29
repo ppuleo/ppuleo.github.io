@@ -2,6 +2,7 @@
 layout:     post
 title:      Free Brick Tiling Background
 date:       2012-02-16 15:13:29
+image:      /images/brick-bg.jpg
 summary:    Free 200px by 200px seamlessly tiling brick background.
 categories: article
 tags:

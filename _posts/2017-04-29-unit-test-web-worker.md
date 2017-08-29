@@ -2,6 +2,7 @@
 layout:     post
 title:      Unit Testing Complex Web Workers in AngularJS with Karma and Jasmine
 date:       2017-04-29T13:30:00-0700
+image:      /images/articles/akj-logos.png
 summary:    Creating unit tests for complex Web Workers can be difficult since they run in an isolated context and only expose methods for sending data into the worker and receiving data back when the worker is finished. To unit test individual Web Worker functions, we need to execute the worker in an accessible context, expose its methods, and mock the isolated context properties workers expect.
 categories: article
 tags:
@@ -79,7 +80,7 @@ Note that while Web Workers allow external scripts to be imported (that's the `i
 1. Create a spec helper with methods to get and instantiate the Web Worker in the `window` context
 2. Optionally, create a mock for the Web Worker including the methods expected from `DedicatedWorkerGlobalScope`
 
-**Example Spec Helper: /test/unit/spec-helper.js**
+**Example Spec Helper:** */test/unit/spec-helper.js*
 
 ```javascript
 /* jshint evil:true */
@@ -145,7 +146,7 @@ Note that while Web Workers allow external scripts to be imported (that's the `i
 1. Inject the spec helper before each test
 2. Fetch the Web Worker file using */base* as the folder root (see karma issue [#1607](https://github.com/karma-runner/karma/issues/1607))
 
-**Example Test: /scripts/find-primes.worker.test.js**
+**Example Test:** */scripts/find-primes.worker.test.js*
 
 ```javascript
 'use strict';

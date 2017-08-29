@@ -2,6 +2,7 @@
 layout:     post
 title:      A Lightweight Caching Proxy in PHP
 date:       2012-09-07T14:30:00-0700
+image:      /images/php-logo.png
 summary:    Occasionally, I've come across situations where I'm building client-side applications that use AJAX or AHAH calls to retrieve data from an infrequently updated third-party source and I'd like to minimize the load on the  source while still managing to get new data when it's available. A caching proxy can help do just that.
 categories: article
 tags:

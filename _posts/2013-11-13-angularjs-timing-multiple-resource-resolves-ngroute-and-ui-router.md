@@ -3,6 +3,7 @@ layout:     post
 title:      AngularJS&colon; Timing Multiple resource Resolves in ngRoute and ui-router
 date:       2013-11-13T17:03:51-0700
 update_date: 2013-12-10T15:32:30-0700
+image:      /images/angularjs-logo.png
 summary:    Both AngularUI Router and Angular's own ngRoute support the concept of a resolve, an optional map of dependencies which should be injected into a controller associated with a particular state. Let's look at how we can resolve multiple external resource calls before transitioning to a new state.
 categories: article
 tags:

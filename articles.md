@@ -1,12 +1,13 @@
 ---
-layout: default
+layout: page
+title: Articles
+permalink: /articles/
 ---
 
 <div class="home">
 
   <div class="posts">
-    {% for post in paginator.posts %}
-
+    {% for post in site.categories.['article'] %}
       <div class="post">
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
           <img class="post-media" src="{{ post.image }}" />
@@ -20,9 +21,7 @@ layout: default
           {% endfor %}
         </ul>
       </div>
-
     {% endfor %}
   </div>
 
-  {% include pagination.html %}
 </div>
