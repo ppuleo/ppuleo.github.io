@@ -60,6 +60,14 @@ table {
   font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+.site-nav a {
+  padding-bottom: 0.25rem;
+
+  &.active {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
 .philhead {
   float: left;
   display: block;

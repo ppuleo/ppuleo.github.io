@@ -13,7 +13,7 @@ permalink: /work/
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
           <img class="post-media" src="{{ post.image }}" />
           <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
-          <h3 class="h2 post-title">{{ post.title }}</h3>
+          <h3 class="post-title">{{ post.title }}</h3>
           <p class="post-summary">{{ post.summary }}</p>
         </a>
         <ul class="post-categories">

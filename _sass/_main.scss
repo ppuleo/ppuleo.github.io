@@ -65,16 +65,18 @@ body {
 .site-header nav a {
   font-size: 1rem;
   color: #666;
+  border-bottom: 1px solid transparent;
 }
 
 .site-header nav a:hover {
   color: #444;
   opacity: 1;
-  border-bottom: 2px solid #444;
+  border-color: #CCC;
+  transition: border-color 300ms ease-out;
 }
 
 .site-nav a + a {
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 .site-nav {
