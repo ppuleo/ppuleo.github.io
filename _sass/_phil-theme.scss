@@ -82,17 +82,21 @@ table {
 .contact-methods {
   list-style: none;
   margin-bottom: 2rem;
+
+  i {
+    width: 20px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 .5rem;
+  }
+
+  a {
+    word-break: break-all;
+  }
 }
 
 .social-icons a {
   color: #7a7a7a;
-}
-
-.contact-methods i {
-  width: 20px;
-  text-align: center;
-  display: inline-block;
-  padding: 0 .5rem;
 }
 
 .responsive-img {
