@@ -384,6 +384,10 @@ h6,
     margin-bottom: 1.333em;
   }
 
+  .site-nav a + a {
+    margin-left: 1.4em;
+  }
+
   .social-icons .left, .social-icons .right {
     text-align: center;
     float: none;
