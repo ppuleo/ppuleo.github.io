@@ -7,7 +7,7 @@
             {% include social_links.html %}
           {% endif %}
         </section>
-        <section class="copyright">All content copyright Phil Puleo © 2017 • All rights reserved.</section>
+        <section class="copyright">All content copyright Phil Puleo © <span id="copyright-year">2020</span> • All rights reserved.</section>
         <section class="poweredby">Made with <a href="http://jekyllrb.com"> Jekyll</a> and the <a href="http://pixyll.com">Pixyll Theme</a></section>
       </small>
     </div>
@@ -26,12 +26,18 @@ ga('send', 'pageview');
 
 </script>
 
-<script 
-  src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
-  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" 
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
   crossorigin="anonymous"
   >
 </script>
 <script src="{{ '/assets/transition.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/assets/zoom.min.js' | prepend: site.baseurl }}"></script>
+<script type="javascript">
+  (function() {
+    var copyright = document.getElementById('copyright-year');
+    copyright.innerHTML = (new Date()).getFullYear();
+  })();
+</script>
 {% endif %}
