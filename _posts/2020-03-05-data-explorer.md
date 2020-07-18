@@ -16,7 +16,7 @@ permalink:  /work/projects/data-explorer
 ---
 
 <p>FireEye Data Explorer is the next iteration of the X15 Enterprise product UI I helped create at X15 Software. I led the Data Explorer UI team in adding new features, performance enhancements, and UX refinements to help users collect, manage, analyze, and explore big data sets inside of FireEye.</p>
-<figure class="captioned-img">
+<figure class="captioned-img clearfix">
   <img src="/images/projects/dx-example-dashboard-network.png" data-action="zoom"/>
   <figcaption>Data Explorer UI: example dashboard with interactive charts</figcaption>
 </figure>
