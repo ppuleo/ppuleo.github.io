@@ -4,10 +4,10 @@ title: About
 permalink: /about/
 ---
 
-<img class="philhead" alt="Phil's Head" src="/images/philhead-big2.png" /> Hi there. I'm Phil Puleo.
+<img class="philhead" alt="Phil's Head" src="/images/philhead-big2.png" /> Hi, I'm Phil Puleo.
 
-I'm a front-end/full-stack web application developer specializing in rapid development with [mongoDB](http://mongodb.org), [Express](http://expressjs.com), [AngularJS](http://angularjs.org), and [node.js](http://nodejs.org) (a.k.a., the [MEAN stack](http://blog.mongodb.org/post/49262866911/the-mean-stack-mongodb-expressjs-angularjs-and)).
+I'm an experienced and versatile web application architect, developer, web standards proponent, and engineering team leader. My recent work has focused on enterprise UI architecture, component library creation, engineering team management, and data-driven UI implementation with TypeScript, Angular, and D3.
 
 My development experience ranges from hand coding responsive, standards-based HTML/CSS and JavaScript to crafting object-oriented application logic in node.js, PHP, and ASP.NET C#, to developing database schemas and architecting complex applications.
 
-Want to read even more insanely boring acronym lists? Awesome, then check out my [résumé](/images/puleo_resume.pdf).
+To learn more, [get in touch](/contact) or view my [résumé](/images/puleo_resume.pdf).
