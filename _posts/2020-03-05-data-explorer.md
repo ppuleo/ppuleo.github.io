@@ -36,7 +36,6 @@ permalink:  /work/projects/data-explorer
     <a href="https://www.linkedin.com/in/bharat-jain-40546a36" target="_blank">Bharat Jain</a>,
     Christine Lam,
     <a href="https://www.linkedin.com/in/narcisse-noumegni-911a1a25" target="_blank">Narcisse Noumegni</a>,
-    <a href="https://www.sebastiantoomey.com" target="_blank">Sebastian Toomey</a>,
     Phil Puleo
   </li>
 </ul>
