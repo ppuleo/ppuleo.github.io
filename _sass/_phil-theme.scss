@@ -119,6 +119,16 @@ table {
   }
 }
 
+.captioned-video {
+  width: 640px;
+  margin: 0.3rem auto 1rem;
+
+  figcaption {
+    font-size: 1rem;
+    font-style: italic;
+  }
+}
+
 .credits {
   list-style: none;
 }
