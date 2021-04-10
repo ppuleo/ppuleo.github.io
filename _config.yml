@@ -26,7 +26,6 @@ linkedin_username: phillippuleo
 bitcoin_url:
 paypal_url:
 flattr_button:
-cv: "/images/puleo_resume.pdf"
 
 # Build settings
 markdown: kramdown
